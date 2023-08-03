@@ -6,8 +6,6 @@ public class JavaBeans {
 	private String fone;
 	private String email;
 	
-	
-	
 	public JavaBeans() {
 		super();
 	}
