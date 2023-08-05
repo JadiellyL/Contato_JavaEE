@@ -3,8 +3,7 @@
     <%@ page import = "model.JavaBeans"%>
     <%@ page import = "java.util.ArrayList"%>
     <%
-    	ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
-    	
+    ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
     %>
     
 <!DOCTYPE html>
@@ -18,13 +17,14 @@
 <body>
 	<h1>Agenda de contatos</h1>
 	<a href="novo.html" class="Botao">Novo contato</a>
-	<table>
+	<table id="tabela">
 		<thead>
 			<tr>
 				<th>Id</th>
 				<th>Nome</th>
 				<th>Fone</th>
 				<th>Email</th>
+				<th>Opções</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -34,6 +34,7 @@
 				<td><%=lista.get(i).getNome() %></td>
 				<td><%=lista.get(i).getFone() %></td>
 				<td><%=lista.get(i).getEmail() %></td>
+				<td><a href="select?idcontato=<%=lista.get(i).getIdcontato() %>" class="Botao">Editar</a></td>
 			</tr>
 			<%}%>
 		</tbody>
