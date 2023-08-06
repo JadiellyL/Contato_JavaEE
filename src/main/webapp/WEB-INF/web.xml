@@ -10,5 +10,14 @@
     <servlet-name>Controller</servlet-name>
     <servlet-class>controller.Controller</servlet-class>
   </servlet>
-
+  <servlet>
+    <description></description>
+    <display-name>servezinho</display-name>
+    <servlet-name>servezinho</servlet-name>
+    <servlet-class>controller.servezinho</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servezinho</servlet-name>
+    <url-pattern>/servezinho</url-pattern>
+  </servlet-mapping>
 </web-app>
