@@ -5,6 +5,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
+	margin: 0px;
 }
 
 h1{
@@ -68,6 +69,7 @@ h1{
 	border: 1px solid #ddd;
 	padding: 10px;
 }
+
 
 
 

@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Agenda de contatos</title>
 	<link rel="icon" href="imagens/phone.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<h1>Criar novo contato</h1>
-	<form name="frmContato" action="insert">
-		<table>
-			<tr>
-				<td><input type="text" name="nome" placeholder="nome" class="caixa1"></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="fone" placeholder="fone" class="caixa2"></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="email" placeholder="email" class="caixa1"></td>
-			</tr>
-		</table>
-		<input type="button" value="Adicionar" class="Botao" onclick="validar()">
-	</form>
+	<h1 class="center blue-text text-darken-2">Criar novo contato</h1>
+	<div class="container">
+
+		<div class="row container center">
+			<div class="input-field col s12 centered">
+				<form name="frmContato" action="insert">
+					<table class="white-text">
+						<tr>
+							<td><input type="text" name="nome" placeholder="nome"></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="fone" placeholder="fone"></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="email" placeholder="email"></td>
+						</tr>
+					</table>
+					<input type="button" value="Adicionar" class="waves-effect light-blue darken-4 btn" onclick="validar()">
+				</form>
+			</div>
+		</div>
+
+	</div>
 	<script src="scripts/validador.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
